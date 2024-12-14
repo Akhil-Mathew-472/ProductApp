@@ -42,7 +42,7 @@ export const ProductCard = ({ product }) => {
 
   return (
     
-    <div className="col-md-4 mb-4 " style={{ width: "340px" }}>
+    <div className="col-md-4 mb-4 " style={{ width: "320px" }}>
       <div className="card p-3" style={{height:"330px"}}>
       <div className="d-flex justify-content-center" style={{ height: "150px",width:"180px" }}>
       <img
