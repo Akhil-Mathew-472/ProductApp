@@ -26,8 +26,8 @@ const CreatePage = ({isDarkMode,setIsDarkMode}) => {
 
   return (
     <div
-      className="container d-flex justify-content-center align-items-center"
-      style={{ marginTop: "76px" }}
+      className="container d-flex justify-content-center  align-items-center"
+      style={{ marginTop: "76px",width:"65%" }}
     >
       <div
         className={`card shadow-lg p-4 ${
@@ -35,8 +35,8 @@ const CreatePage = ({isDarkMode,setIsDarkMode}) => {
         }`}
         style={{ width: "100%", maxWidth: "800px" }}
       >
-        <h1 className="text-center mb-4 text-primary">Create New Product</h1>
-        <form className={`bg-light p-4 rounded ${
+        <h2 className="text-center mb-4 text-primary">Create New Product</h2>
+        <form className={`bg-light p-3 rounded ${
           isDarkMode ? "bg-dark text-light" : "bg-light text-dark"
         }`} >
           <div className="form-group mb-3">
