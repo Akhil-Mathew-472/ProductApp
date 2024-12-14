@@ -1,11 +1,18 @@
 import express from 'express'
 import dotenv from 'dotenv'
+import cors from 'cors'
 dotenv.config()
 import { connectDB } from './config/db.js'
 import productRoutes from "./routes/product.route.js"
 
 
 const app = express()
+
+const cors = require('cors');
+app.use(cors({
+    origin: 'https://productapp-f.onrender.com',
+}));
+
 
 
 
