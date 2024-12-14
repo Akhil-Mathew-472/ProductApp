@@ -9,7 +9,7 @@ export const useProductStore = create((set) => ({
     }
 
     
-      const res = await fetch("/api/products", {
+      const res = await fetch("https://productapp-6.onrender.com/api/products", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -28,13 +28,13 @@ export const useProductStore = create((set) => ({
     
   },
   fetchProducts : async () =>{
-    const res  = await fetch("/api/products");
+    const res  = await fetch("https://productapp-6.onrender.com/api/products");
     const data = await res.json()
     set({products:data.data})
   },
   deleteProduct: async (pid)=>{
    
-    const res = await fetch(`/api/products/${pid}`,{
+    const res = await fetch(`https://productapp-6.onrender.com/api/products/${pid}`,{
       method:"DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -53,7 +53,7 @@ export const useProductStore = create((set) => ({
   },
    updateProduct: async (pid, updatedProduct) => {
     try {
-      const response = await fetch(`/api/products/${pid}`, {
+      const response = await fetch(`https://productapp-6.onrender.com/api/products/${pid}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(updatedProduct),

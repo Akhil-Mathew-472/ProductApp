@@ -8,7 +8,7 @@ import productRoutes from "./routes/product.route.js"
 
 const app = express()
 
-const cors = require('cors');
+
 app.use(cors({
     origin: 'https://productapp-f.onrender.com',
 }));
