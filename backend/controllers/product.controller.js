@@ -1,4 +1,5 @@
 import Product from "../models/product.model.js";
+import mongoose from 'mongoose'
 
 export const getProducts = async (req,res)=>{
     try{
@@ -84,7 +85,7 @@ export const updateProduct=async(req,res)=>{
     try{
          const updatedProduct = await Product.findByIdAndUpdate(id,product,{new:true})
          res.status(200).json({
-            succes:true,
+            success:true,
             data:updatedProduct
          })
     }
